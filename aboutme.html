@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyber Security Expert</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Consolas', monospace;
+        }
+
+        body {
+            background: #000;
+            color: #0f0;
+            line-height: 1.8;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .profile-header {
+            text-align: center;
+            margin-bottom: 3rem;
+            border: 2px solid #0f0;
+            padding: 1.5rem;
+            box-shadow: 0 0 15px #0f03;
+        }
+
+        .profile-pic {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            border: 2px solid #0f0;
+            margin-bottom: 1rem;
+            filter: grayscale(100%) contrast(120%);
+            transition: 0.3s;
+        }
+
+        .profile-pic:hover {
+            filter: none;
+            transform: rotate(8deg);
+        }
+
+        .name {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+            text-shadow: 0 0 8px #0f0;
+        }
+
+        .title {
+            color: #0f0;
+            letter-spacing: 2px;
+        }
+
+        .about-section {
+            background: rgba(0, 20, 0, 0.2);
+            padding: 2rem;
+            margin: 2rem 0;
+            border-left: 3px solid #0f0;
+        }
+
+        .hacker-list {
+            list-style: none;
+            margin: 1rem 0;
+        }
+
+        .hacker-list li {
+            padding: 0.5rem;
+            border-bottom: 1px solid #0f03;
+            position: relative;
+        }
+
+        .hacker-list li::before {
+            content: ">> ";
+            color: #0f0;
+        }
+
+        .contact-box {
+            text-align: center;
+            margin: 2rem 0;
+        }
+
+        .telegram-btn {
+            background: transparent;
+            color: #0f0;
+            padding: 1rem 2rem;
+            border: 2px solid #0f0;
+            text-decoration: none;
+            transition: 0.3s;
+            display: inline-block;
+        }
+
+        .telegram-btn:hover {
+            background: #0f0;
+            color: #000;
+            box-shadow: 0 0 15px #0f03;
+        }
+
+        .social-media {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .social-icon {
+            font-size: 1.5rem;
+            color: #0f0;
+            transition: 0.3s;
+        }
+
+        .social-icon:hover {
+            color: #fff;
+            transform: scale(1.2);
+        }
+
+        @keyframes scanline {
+            0% { transform: translateY(-100%); }
+            100% { transform: translateY(100%); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="profile-header">
+            <img src="https://files.catbox.moe/os9wlr.jpg" alt="Hacker Profile" class="profile-pic">
+            <h1 class="name">0xAnonimTHI</h1>
+            <p class="title">[ Penetration Tester | Security Researcher ]</p>
+        </header>
+
+        <section class="about-section">
+            <h2>> Tentang Saya</h2>
+            <ul class="hacker-list">
+                <li>Black Hat Hacker bersertifikasi OSCP & OSWP</li>
+                <li>Spesialisasi: Web App Penetration & Network Security</li>
+                <li>7 tahun pengalaman bug bounty</li>
+                <li>Mengembangkan tools keamanan open-source</li>
+                <li>Aktif dalam CTF competitions</li>
+            </ul>
+            
+            <div class="contact-box">
+                <a href="https://t.me/AnonimTHI" class="telegram-btn" target="_blank">
+                    <i class="fab fa-telegram"></i>
+                    Kontak Secure
+                </a>
+            </div>
+        </section>
+
+        <div class="social-media">
+            <a href="https://www.instagram.com/im.anonimthi" class="social-icon" target="_blank">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.tiktok.com/@anonim.thi" class="social-icon" target="_blank">
+                <i class="fab fa-tiktok"></i>
+            </a>
+            <a href="https://www.youtube.com/@VanWheX" class="social-icon" target="_blank">
+                <i class="fab fa-youtube"></i>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
